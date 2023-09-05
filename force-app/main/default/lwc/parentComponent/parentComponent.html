@@ -1,0 +1,11 @@
+<template>
+    <!-- 2. on click i want to send data to child-->
+    <lightning-button
+    label="send data"
+    onclick={handleClick}
+    ></lightning-button>
+    <!--1. by default send data to child-->
+    <c-child-component message={msg}></c-child-component>
+
+    <input type="text" name="firstname"/>
+</template>

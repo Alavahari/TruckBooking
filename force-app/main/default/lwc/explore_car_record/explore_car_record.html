@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <lightning-datatable
+        key-field="Id"
+        data={carModel.data}
+        columns={columns}
+        hide-checkbox-column="true"  
+        show-row-number-column="true"
+        onrowaction={callRowAction}>
+    
+        
+        <!--<lightning-button label="Pay" type="submit" value="submit"></lightning-button> -->
+    </lightning-datatable>
+    </lightning-card>
+</template>

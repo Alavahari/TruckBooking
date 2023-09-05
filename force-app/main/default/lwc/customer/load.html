@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+    <h1 style="font-size: 2em; color:rgb(0, 77, 80)" class="slds-align_absolute-center">Load The Booked Truck</h1>
+
+    <div>
+        
+        <lightning-record-edit-form object-api-name="Truck_Load__c" onsuccess={handleSuccess}>
+            <lightning-input-field field-name="Truck_Booking__c" value={bookingId}></lightning-input-field>
+            <lightning-input-field  field-name="Name"></lightning-input-field>
+            <lightning-input-field  field-name="Weight__c"></lightning-input-field>
+            <div class="slds-m-around_small slds-align_absolute-center">
+                <lightning-button label="Save and New Load" variant="brand" class="slds-p-around_small" type="submit" onclick={handleSaveAndNew}> </lightning-button>
+                <lightning-button label="Finish" variant="brand" class="slds-p-around_small" type="submit" onclick={handleSave}></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+        <lightning-button label="Previous" variant="brand" slot="actions" onclick={handlepageThree}></lightning-button>
+   </div>
+</lightning-card>
+</template>

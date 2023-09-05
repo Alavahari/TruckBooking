@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Final Price">
+        <lightning-button label="Return" slot="actions" onclick={returnMainPage}></lightning-button>
+        <p class="slds-p-horizontal_small">
+            Car Name: {value} <br>
+            Customer Name: {customerName} <br>
+
+        </p>
+    <lightning-button variant="brand" label="Confirm Booking" title="Primary action" onclick={bookTheCar} class="slds-m-left_x-small"></lightning-button>
+
+    </lightning-card>
+</template>

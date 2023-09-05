@@ -1,0 +1,31 @@
+<template>
+    <!-- <div>{fullname}</div> -
+    changeHandler is the  method name in js  -->
+    
+    <lightning-card  title="Two Way Data Binding">
+
+    <div class="slds-m-around_medium" >  
+       <!-- <input type="text" onkeyup={changeHandler}/> -->
+       <lightning-input type="text" 
+       label="Enter Course Name" 
+        onkeyup={changeHandler}>
+     </lightning-input>
+       <div>{fullname} is the course of {title}
+    </div>
+           </div>
+        </lightning-card>
+
+        <lightning-card  title="@track proprty">
+
+         <div class="slds-m-around_medium" >  
+            <!-- <input type="text" onkeyup={changeHandler}/> -->
+            <lightning-input type="text" 
+            label="Enter city Name" 
+             onkeyup={trackHandler}>
+          </lightning-input>
+            <div>{address.city} is my {city}
+         </div>
+                </div>
+             </lightning-card>
+
+</template>

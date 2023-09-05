@@ -1,0 +1,21 @@
+<template>
+  {message}
+<template for:each={leads.data} for:item="lead">
+<div key={lead.Id}>
+  {lead.Name} <br>
+  {lead.Phone} <br>
+  {lead.MobilePhone} <br/>
+</div>
+
+
+</template>
+  <lightning-button
+    label="fetch accounts"
+    onclick={handelClick}
+  ></lightning-button>
+ <!-- <lightning-button
+  label="fetch Leads"
+  onclick={handleClick1}
+></lightning-button>
+-->
+</template>

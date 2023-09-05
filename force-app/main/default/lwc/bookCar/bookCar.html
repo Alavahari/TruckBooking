@@ -1,0 +1,24 @@
+<template>
+    <lightning-combobox
+            name="progress"
+            label="Car Name"
+            value={value}
+            placeholder="Select the Car Model"
+            options={carModelOptions}
+            onchange={handleChange} ></lightning-combobox>
+
+    <p>Selected value is: {value}</p>
+
+    <lightning-combobox
+            name="progress1"
+            label="Choose Customer"
+            value={customerName}
+            placeholder="Select Customer Name"
+            options={contactData}
+            onchange={handleCustomerChange} ></lightning-combobox>
+
+    <p>Selected value is: {customerName}</p>
+
+    <lightning-button variant="brand" label="Book Car" title="Primary action" onclick={getBookingPage} class="slds-m-left_x-small"></lightning-button>
+
+</template>
